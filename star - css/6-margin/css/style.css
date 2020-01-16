@@ -1,0 +1,26 @@
+
+*{
+    margin:0;
+    padding: 0;
+    /* box-sizing do box exacli */
+    box-sizing: border-box;
+}
+
+
+
+
+.somespan{
+   
+    display: inline-block;
+    background-color: rebeccapurple;
+   
+     /* margin-right: 0;  */
+   
+}
+
+.somespan2{
+    display: inline-block;
+    background-color: red;
+   
+     /* margin-left: 0;  */
+}

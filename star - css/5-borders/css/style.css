@@ -1,0 +1,14 @@
+.somediv{
+    background-color: aqua;
+    height: 30vh;
+    border-top-color:black  ;
+    border-bottom-color:black ;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-width:5px ;
+
+        /* em / rm (is better to writ for respansiv) */
+
+
+    border-radius: 0 90px 0 90px;
+}

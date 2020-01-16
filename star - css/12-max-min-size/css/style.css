@@ -1,0 +1,23 @@
+.somediv{
+    width: 80%;
+    /* min-width: 500px; */
+    /* max-width: 1000px; */
+    height: 50vh;
+    /* min-width: 900px; */
+    /* min-height:500px ; */
+    background-color: red;
+    
+}
+
+.somediv2{
+    background-color: royalblue;
+    height: 20vh;
+    width: 500px;
+}
+
+
+.somediv3{
+    height: 50vh;
+    background-color: slategray;
+    width: 250px;
+}

@@ -1,0 +1,40 @@
+.somediv{
+    height: 200PX;
+
+    /* width: 200VW; */
+    width: 200px;
+    background-color: aqua;
+        /* if you want do transition just width/heigh you should write   transition-property:width , height , background-color ; */
+    transition-property: width ,height;
+    transition-duration: 2s;
+    position: relative;
+
+}
+
+/* -------transition-property: top,left, transform;   THAT IS IMPORTANT-----------------------------*/
+.somediv>span{
+
+   position: absolute; 
+    top: 1px;
+    left: 1px;
+     transition-duration: 5s;
+     transition-property: top,left, transform;
+}
+
+
+
+/* if you want do at responsiv you should writh VW */
+
+
+
+.somediv:hover>span{
+    
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+
+

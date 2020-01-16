@@ -1,0 +1,47 @@
+
+.somediv{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    font-size: 30px;
+    transform: translateX(100px);
+    position: relative;
+    /* agar rotatex(90deg bezari ) halate saghf mishe  --agar x/y nanevisi az baghal micharche na y/x*/
+    /* scale()  kontroll mikone sizo dobarabar mikone  -- agar scalex/y(1.5 , 2) benevisi faghat hamon ghesmat bozorg mishe */
+    /* transform: rotateX(0deg); */
+    /* transform: rotateY(0deg); */
+    /* transform: rotate(0deg); */
+
+    /* transform: scale(2);  */
+    /* transform: scale(0.5 , 0.5); push   X AND Y CHANGE */
+
+    /* transform: skewX(10deg); KAJ MISHE RO MEHVARE X */
+    /* transform: skewY(10deg); KAJ MISHE  RO MEHVARE Y*/
+
+
+}
+
+/*
+
+.somediv:hover{
+     transform: skew(10deg);
+} */
+
+
+/* span{
+     this solution is responsiv-------------
+   position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+} */
+
+
+
+span{
+    /* other solution but it is not responsiv------------- */
+    position: absolute;
+    transform: translate(calc(100px - 50%), calc(100px - 50%) );
+}

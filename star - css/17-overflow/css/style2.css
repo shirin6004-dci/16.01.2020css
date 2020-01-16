@@ -1,0 +1,49 @@
+.conter {
+    width: 80%;
+    height: 70vh;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px black;
+
+}
+
+
+
+
+.imges {
+    width: 240vw;
+}
+
+
+
+
+.img {
+    height: 70vh;
+    width: 80vw;
+    background-image: url(../img/nat-5.jpg);
+    background-size: cover;
+    float: left;
+
+}
+
+.img2 {
+    height: 70vh;
+    width: 80vw;
+    background-image: url(../img/nat-6.jpg);
+    background-size: cover;
+    float: left;
+
+
+}
+
+.img3 {
+    height: 70vh;
+    width: 80vw;
+    background-image: url(../img/nat-7.jpg);
+
+    background-size: cover;
+    float: left;
+
+}

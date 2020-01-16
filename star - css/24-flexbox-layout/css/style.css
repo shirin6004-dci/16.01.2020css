@@ -1,0 +1,28 @@
+.flexdiv{
+    display: flex;
+    /* column /  column-reverse / row-reverse*/
+     
+    /* that is for respansiv   flex-wrap: wrap;  baraks flex-wrap: wrap-reverse; */
+
+    /* flex-flow:row wrap;  ypu can write also shortkat */
+    flex-flow:wrap ;
+
+    /* if row is will be center 
+    flex-direction:row;      *****************************
+    justify-content: center; ********************or flex-end pot it at the end***or space-between put space between divs****    vertical-align:top*/
+
+    flex-direction:row;
+    align-items: center;
+    background-color: burlywood;
+}
+
+.flexdiv>div{
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    /* line-height: 100px; space between lins  kamm text at mite*/
+    line-height: 100px;
+    background-color: aqua;
+
+}

@@ -1,0 +1,33 @@
+
+/* div + p {
+    color: red;
+} */
+
+/* 
+article + p{
+    color: red;
+} */
+
+ 
+/* p + p{ 
+    color: red;
+}  */
+
+/* 
+ p + p + article {
+    color: red;
+} 
+
+ */
+/* 
+
+ div:first-child {
+     color: red;
+ }
+ */
+
+ p ~ div{
+     color: red;
+ }
+
+

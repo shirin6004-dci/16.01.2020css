@@ -1,0 +1,30 @@
+.animated{
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    animation-name: fbw5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fbw5{
+    /* from{background-color: green;}
+    to{background-color: greenyellow;
+    width: 500px;} */
+
+    0%{
+        width: 100px;
+        background-color: green;
+    }
+    50%{
+        width: 500px;
+        background-color: greenyellow;
+    }
+    100%{
+        width: 100px;
+        background-color: grey;
+    }
+
+
+
+}

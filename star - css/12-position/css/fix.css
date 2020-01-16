@@ -1,0 +1,25 @@
+.somediv {
+    height: 2000px;
+
+    width: 500px;
+    background-color: rosybrown;
+}
+
+
+.subdiv {
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    position: fixed;
+    top: 10px;
+}
+
+
+.fix i{
+
+   position: fixed; 
+   right: 10px;
+   bottom: 10px;
+    color: red;
+    font-size: larger;
+}

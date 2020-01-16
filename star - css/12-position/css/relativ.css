@@ -1,0 +1,19 @@
+.somediv {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    left: 50px;
+    top: 50px;
+    position: relative;
+}
+
+.subdiv {
+    height: 50px;
+    width: 50px;
+    background-color: rosybrown;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}

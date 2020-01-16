@@ -1,0 +1,21 @@
+/* selector with tag name */
+
+title {
+    color:blue;
+    display: block;
+}
+
+.paragraph {
+
+    /* space between charachters  < letter-spacing> */
+    letter-spacing: 3px;
+    /*  <zwishen zahl>     minus take shadow top and plus(+) take shadow unten   */
+    text-shadow: 5px -5px 5px black;
+}
+
+
+#someID {
+    
+    box-shadow: 5px 5px 5px black;
+    /* background-color: gray; */
+}

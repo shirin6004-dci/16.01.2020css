@@ -1,0 +1,193 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: ;
+}
+
+/* .container{
+    width: 80%;                    i have this continer in liberi
+    margin: auto;
+} */
+
+
+.card{
+    /* OR YOU CAN DO OVERFLOW  */
+/* you can write max-height=  you can find it in COMPUTED - FILTER - HEIGHT */
+/* height: 20vh;  we had it at first that we now where is div */
+/* background-color: rgba(78, 70, 70, 0.575);   we had it at first that we now where is div*/
+margin: 20px;
+position: relative;   
+/* background-color:white;
+box-shadow: 1px 7px 17px #8b8888; */
+border-radius: 10px ;    
+}
+
+
+
+
+
+
+
+
+                                            /* ----------IMGS--------------- */
+.img1{
+    height: 150px;
+    background-image:linear-gradient( rgba(126, 128, 0, 0.479) , rgba(166, 167, 135, 0.479) ) , url(../img/nat-5.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+    border-radius: 10px  10px 0 0;
+
+}
+
+.img2{
+    height: 150px;
+    background-image:linear-gradient( rgba(0, 128, 0, 0.479) , rgba(135, 167, 135, 0.479) ) , url(../img/nat-6.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+    border-radius: 10px 10px 0 0 ;
+}
+
+.img3{
+    height: 150px;
+    background-image:linear-gradient( rgba(0, 124, 128, 0.479) , rgba(125, 165, 172, 0.479) ) , url(../img/nat-7.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+    border-radius: 10px 10px 0 0  ;
+}
+
+                            /* -------------BOX1 TITLE----------- */
+.title1{
+    position: absolute;
+    top: 85px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(141, 93, 5) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+.title2{
+    position: absolute;
+    top: 115px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(141, 93, 5) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+                            /* ----------BOX2 TITLE------------ */
+.title3{
+    position: absolute;
+    top: 85px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(59, 141, 5) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+.title4{
+    position: absolute;
+    top: 115px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(100, 141, 5) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+                            /* ----------BOX3 TITLE--------------- */
+.title5{
+    position: absolute;
+    top: 85px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(202, 203, 204) 0%, rgb(5, 98, 141) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+.title6{
+    position: absolute;
+    top: 115px;
+    right: 3px;
+    color: white;
+    text-transform: uppercase;
+    background: linear-gradient(to top ,rgb(202, 204, 204) 0%, rgb(5, 91, 141) 100%);
+    /* background-color: rgba(182, 127, 26, 0.836); */
+    padding: 5px;
+}
+
+                        /* -------------BOX1 LIST--------------- */
+
+.list{
+    list-style-type: none;
+    margin-top: 20px;
+    text-align: center;
+    color: rgba(128, 128, 128, 0.671);
+    font-size: smaller;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.list>li{
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+.list>li:last-child{
+    border-bottom: none;
+}
+
+    /* ----------------------i have respansiv or @media in liberi---------------------- */
+
+    .flip{
+        background-color: transparent;
+        width: 25vw;
+        height: 87vh;
+        perspective: 1000px;
+   
+    }
+    .base{
+        border-radius: 10px;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform-style:preserve-3d ;
+        transition: all 1s;
+        
+    }
+    .flip:hover .base{
+        transform: rotateY(180deg);
+    }
+    
+    .back , .front{
+        backface-visibility: hidden;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        border-radius: 10px;
+    }
+    
+
+    .front{
+        background-color: rgba(223, 215, 215, 0.555) ;
+    }
+    
+    .back{
+        background-color: teal;
+        transform: rotateY(180deg);
+    }
+    

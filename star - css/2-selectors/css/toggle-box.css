@@ -1,0 +1,27 @@
+/* 
+.togglebox:checked + label{
+    background: #ffff00;
+}
+
+.togglebox {
+    display: none;
+} */
+
+#ul {
+    visibility: hidden;
+}
+
+
+button + #ul:checked {
+
+    visibility: visible;
+}
+
+
+
+.button {
+    padding: 7px;
+}
+
+
+

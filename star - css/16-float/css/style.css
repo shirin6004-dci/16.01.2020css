@@ -1,0 +1,24 @@
+.div1{
+    float: left;
+    background-color: red;
+    height: 100px;
+    width: 100px;
+}
+
+.div2{
+    float: left;
+    clear: both;
+    background-color: grey;
+    height: 75px;
+    width: 100px;
+}
+.div3{
+    float: left;
+    background-color: black;
+    height: 50px;
+    width: 100px;
+}
+
+/* div{
+    display: inline-block;  will be bottom   but with float will be from oben 'top' and float ist respansiv
+} */

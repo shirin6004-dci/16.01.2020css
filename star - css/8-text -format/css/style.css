@@ -1,0 +1,58 @@
+article h1{
+    color: aquamarine;
+    text-align:center ;
+}
+
+article p{
+    border: 2px solid blue;
+    width: 300px;
+    text-align: justify;
+      /* put space in erste line */
+    text-indent: 50px;    
+
+}
+
+h1 {
+    letter-spacing: 3px;
+   
+   
+  }
+  
+  h2 {
+    letter-spacing: -3px;
+    word-spacing: 20px;
+
+  }
+  
+
+
+h1 {
+    text-decoration: overline;
+  }
+  
+  h2 {
+    text-decoration: line-through;
+  }
+  
+  h3 {
+    text-decoration: underline;
+  }
+
+
+
+  p.uppercase {
+    text-transform: uppercase;
+    line-height: 1.8;
+    /* you can put your sentenses samte jolo */
+     direction: rtl;
+     text-shadow: 3px 2px red;
+      
+  }
+  
+  p.lowercase {
+    text-transform: lowercase;
+  }
+  
+  p.capitalize {
+    text-transform: capitalize;
+  }

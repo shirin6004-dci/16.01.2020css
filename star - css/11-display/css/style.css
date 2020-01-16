@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container{
+    background-color: aqua;
+    height: 500px;
+    width: 50%;
+}
+
+
+
+
+.child1{
+    background-color: lightcoral;
+    width: 100px;
+}
+
+.child2{
+    background-color: lightslategrey;
+}
+
+
+
+.span1{
+    background-color: lime;
+    width: 50%;
+    display: inline-block;
+   border : 1px solid black;
+   /* visibility: hidden;    ist there but is hidden / display:none is same as delet/spacity:0  ist same as hidden */
+}
+.span2{
+    background-color: magenta;
+   
+}

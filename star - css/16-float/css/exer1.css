@@ -1,0 +1,148 @@
+ 
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ 
+ 
+ .conter{
+     width: 100%;
+     height: 100vh;
+     /* background-color: thistle; */
+
+}
+
+
+.box1{
+    width: 100%;
+    height: 5vh;
+    background-color: grey;
+    float: left;
+}
+
+.box2{
+    width:100%;
+    height: 15vh;
+    background-color: chocolate;
+    float: left;
+}
+
+.box3{
+    width: 25%;
+    height: 15vh;
+    background-color: black;
+    float: left;
+}
+.box4{
+    width: 75%;
+    height: 15vh;
+    background-color: cadetblue;
+    float: left;
+}
+
+.box5{
+    width: 75%;
+    height: 15vh;
+    background-color: chartreuse;
+    float: left;
+}
+
+.box6{
+    width: 25%;
+    height: 40vh;
+    background-color: coral;
+    float: right;
+}
+
+.box7{
+    width: 25%;
+    height: 50vh;
+    background-color: darkblue;
+    float: left;
+
+}
+
+
+.box8{
+    width: 50%;
+    height: 25vh;
+    background-color: darkkhaki;
+    float: left;
+}
+
+
+
+
+.box9{
+    width: 75%;
+    height: 25vh;
+    background-color: darkred ;
+    float: right;
+           
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------- @media muss be at the end-- */
+
+@media only screen and ( max-width:797px ){
+
+
+    .box8 , .box9{
+        float: left;
+        clear: both;
+        width: 100%;
+    }
+
+    .box7{
+       
+        height: 25vh;
+    }
+
+    .box5, .box6 , .box7{
+        width: 50%;
+    }
+
+
+    .box3 , .box4{
+        width: 50%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 340px){
+
+    /* [class*='box']{}    contain word( part of word)  you can writ it so also    or    [class^='box']{}   just begin wort   */
+
+   .box1,.box2,.box3,.box4 , .box5 , .box6 , .box7 , .box8 , .box9{
+       float: left;
+       clear: both;
+       width: 100%;
+   }
+} 
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------- */
+@media print and (max-width:420px){
+
+    /* this for A4 paper */
+    div{
+        border: 5px solid grey;
+    }
+}
+
+
+

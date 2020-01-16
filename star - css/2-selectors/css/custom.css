@@ -1,0 +1,26 @@
+.table{
+    width: 100%;
+}
+
+
+/* 
+.table tr:first-child {
+     background-color: red;
+}
+ */
+
+/* :nth-child(even/odd) or (2n+1)/(2n) */
+/* 
+ .table tr:nth-child(odd) {
+     background-color: rgb(44, 34, 34);
+ }
+
+.table tr:nth-child(even){
+    background-color: rosybrown;
+} */
+
+
+
+ .table tr:nth-child(3n){
+     background-color: red;
+ }

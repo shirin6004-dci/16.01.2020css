@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    background-color: yellowgreen;
+
+
+    /* grid-template-rows: 20vh auto 20vh; *************i can kontrol heigh */
+
+    grid-template-areas: 'header header header'
+                         'menu  main right ' 
+                         'menu footer footer ';
+                         
+                         grid-gap: 10px;
+
+}
+.container div{
+    background-color: rgb(180, 161, 135);
+}
+.header{
+    grid-area: header;
+}
+
+.menu{
+    grid-area: menu;
+}
+
+.main{
+    grid-area: main;
+}
+
+.right{
+    grid-area: right;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+
+
+
+
+@media only screen and (max-width:779px){
+
+    .container{
+        grid-template-areas: 'header header header'
+        'menu  menu menu ' 
+        'main main main '
+        'right right right'
+        'footer footer footer';
+    }
+}

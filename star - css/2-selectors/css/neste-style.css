@@ -1,0 +1,22 @@
+
+/* .divclass{
+    color: red;
+} */
+
+/* div p {
+    color: red;
+} */
+
+/* article p {
+    color: red;
+} */
+
+
+/* child from div or ... (>) */
+/* .divclass>p{
+    color: red;
+} */
+
+.divclass div p {
+    color: red;
+}

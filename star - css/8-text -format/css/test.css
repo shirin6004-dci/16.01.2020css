@@ -1,0 +1,14 @@
+span::first-letter {
+
+   
+    font-size: larger;
+    color: red;
+    /* transform: translateY(-50%); */
+   
+}
+span{
+    display: inline-block; 
+
+    transform: rotate(180deg);
+}
+

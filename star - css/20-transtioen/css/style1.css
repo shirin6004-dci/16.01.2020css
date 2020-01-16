@@ -1,0 +1,20 @@
+.div1{
+    height: 100px;
+    width: 100px;
+    background-color: lightcoral;
+    margin: auto;
+    transition-duration: 5s;
+
+    /* transition-property:transform ;  other sulotion you can write properety */
+
+}
+
+
+
+.div1:hover{
+    transform:rotateY(180deg) ;
+    transition-duration: 5s;
+}
+
+
+

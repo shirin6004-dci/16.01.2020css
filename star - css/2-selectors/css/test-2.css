@@ -1,0 +1,65 @@
+
+.container{
+    width: 100%;
+}
+
+ 
+.container td{
+    
+    vertical-align: bottom;
+    /* border: 1px black solid; */
+}
+
+
+
+td {
+    width: 16.5%;
+}
+
+td:first-child{
+    width: 50%;
+}
+ 
+ .container td input{
+     display: none;
+ } 
+
+
+
+.nav{
+
+    display: none;
+    list-style-type: none;
+    border-block: 2px;
+    
+}
+
+
+
+ .desc , .prob , .pre{
+    display: block;
+    list-style-type: none;
+   margin: 10px;
+   padding: 10px;
+
+} 
+
+
+
+
+
+
+.desc:checked ~ .nav{
+    display: block;
+
+}
+
+
+.prob:checked ~ .nav{
+    display: block;
+}
+
+
+.pre:checked ~ .nav{
+    display: block;
+}

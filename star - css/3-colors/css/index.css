@@ -1,0 +1,13 @@
+.somediv{
+
+     /* you can writ rgba (0,0,0,0.5) /end number do dark or hell */
+    /* Z.B  background-color: rgba(0,0,0,0.5); */
+           
+    height: 100vh ;
+    width: 100vw;
+    position: absolute;
+
+    
+}
+
+

@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header {
+    height: 20vh;
+    /* background-color: cyan; */
+    text-align: center;
+    color: green;
+    padding-top: 40px;
+
+}
+
+
+
+
+
+
+.div1,
+.div3 {
+    height: 50vh;
+
+}
+
+
+.div2 {
+    height: 50vh;
+}
+
+
+.div2 .box1 {
+
+    height: 50vh;
+    position: relative;
+
+}
+
+.div2 .box2 {
+
+    height: 50vh;
+    position: relative;
+
+}
+
+.div2 .box3 {
+
+    height: 50vh;
+    position: relative;
+
+}
+
+.shadow1 {
+
+    height: 50vh;
+    width: 100%;
+}
+
+
+.shadow1 li {
+    text-align: center;
+}
+
+
+.boxinsid1 {
+    width: 90%;
+    float: left;
+    height: 20vh;
+    background: linear-gradient(to right top, rgba(251, 154, 26, 0.534),
+            rgba(209, 149, 18, 0.479)), url(/img/nat-5.jpg) no-repeat;
+    /* background-image: url(../img/nat-5.jpg); */
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+    position: relative;
+    box-shadow: 1PX 2PX 1PX 2PX grey;
+
+
+
+}
+
+.see {
+    background-color: rgba(0, 128, 0, 0.692);
+    ;
+    display: inline-block;
+    position: absolute;
+    top: 80px;
+    right: 35px;
+    z-index: 2;
+
+}
+
+.see2 {
+    background-color: rgba(0, 128, 0, 0.692);
+    ;
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    right: 35px;
+    z-index: 3;
+}
+
+
+
+.boxinsid2 {
+    width: 90%;
+    height: 20vh;
+    float: left;
+    background: linear-gradient(to right top, rgba(90, 251, 26, 0.534),
+            rgba(209, 149, 18, 0.479)), url(/img/nat-6.jpg) no-repeat;
+    /* background-image: url(../img/nat-6.jpg); */
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+    position: relative;
+
+}
+
+
+.boxinsid3 {
+    width: 90%;
+    height: 20vh;
+    float: left;
+    background: linear-gradient(to right top, rgba(26, 198, 251, 0.534),
+            rgba(209, 149, 18, 0.479)), url(/img/nat-7.jpg) no-repeat;
+    /* background-image: url(../img/nat-7.jpg); */
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 15vh, 0 100%);
+    position: relative;
+}
+
+
+
+
+.li1,
+.l1,
+.l2,
+.l3,
+.l4 {
+    font-size: smaller;
+    list-style-type: none;
+    border-bottom: 1px solid rgba(121, 113, 113, 0.486);
+    padding: 4px;
+    clear: both;
+}
+
+
+
+
+.gerd {
+    width: 200px;
+    height: 40px;
+    background-color: rgba(0, 128, 0, 0.692);
+    border-radius: 50px 20px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    
+
+}
+
+.gerd span{
+    color: white; 
+    padding-top: 46px;
+    font-size: smaller;
+   
+ 
+}

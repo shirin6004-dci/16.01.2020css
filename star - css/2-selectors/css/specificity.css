@@ -1,0 +1,22 @@
+#par{
+    color: red;
+}
+
+
+.bar{
+    color: green;
+}
+
+
+.someclass{
+    color: blue;
+}
+
+.somediv div p{
+    color: aqua;
+}
+   /* !important     select it / dar olaviat gharar migire */
+.somediv p{
+    color: blue;
+    color: yellow   !important;
+}

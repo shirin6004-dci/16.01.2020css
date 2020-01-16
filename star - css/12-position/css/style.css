@@ -1,0 +1,33 @@
+.somediv{
+    background-color: gray;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    /* position: relative;
+     left: 50px; 
+     top: 50px;        without position relativ you can not move it*/
+     z-index: 2;
+     right: 20px;
+     top: 20px;
+}
+  /* z-index   mitoni begi kodom laye mitone bala bashe */
+
+.par{
+    position: relative;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.fixdiv{
+    background-color: khaki;
+    height: 50px;
+    width: 50px;
+/* position fix means it ist fix in screen no from parent just scren */
+
+    position: fixed;
+
+    /* position: sticky; you can tell where shuld stay that / top:0 Z.B */
+
+    /* transform: translate(-25px,-25px);
+     you can put your ding in die mitte from screen */
+}

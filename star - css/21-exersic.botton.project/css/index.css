@@ -1,0 +1,584 @@
+.somediv{
+
+  background: linear-gradient(to right top, rgba(127, 251, 26, 0.534),
+  rgba(88, 209, 18, 0.479)), url(../imgs/nat-6.jpg) no-repeat;
+  background-size: cover;
+  background-position: top;
+    height: 90vh;
+    clip-path: polygon(0% 0%,100% 0%,100% 60%,0% 100%); 
+    position: relative;
+    margin: 20px;
+}
+.awesome{
+  position: absolute; 
+  color:white ;
+   top: 8px;
+   left: 8px;
+   font-size: 40px;
+}
+.outdoors{
+  letter-spacing: 15px;
+  padding-top: 100px;
+ text-align: center; 
+  color:white ;
+  line-height: 60px;
+
+}
+
+.outdoorcircel{
+  position: absolute;
+  left: 40%;
+  width: 150px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+}
+.dis{
+  z-index: 10;
+}
+
+.outdoorcircelheader{
+  position: absolute;
+ z-index: 0;
+  width: 150px;
+  height: 35px;
+  border-radius: 30px;
+  background-color: white;
+  transition-duration: 1s;
+}
+
+
+.outdoorcircelheader:hover{
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+
+
+.outdoorcircel>.dis>div{
+  font-size: 10px;
+  color: rgba(128, 128, 128, 0.856);
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: normal;
+  padding: 12px;
+  z-index: 10;
+}
+
+
+
+.bottomm{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  /* transition-duration: 2s; */
+  
+}
+input{
+  display: none;
+}
+
+.bottomm>span{
+  background-color: black;
+  display: inline-block;
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  transition-duration: 1s;
+ 
+}
+
+.bottomm >span:nth-child(1){
+  left: 20px;
+  top: 23.5px;
+}
+
+
+.bottomm >span:nth-child(2){
+  left: 20px;
+  top: 33.5px;
+}
+
+.bottomm >span:nth-child(3){
+  left: 20px;
+  top: 43.5px;
+}
+
+ /* .cover{
+  background-color: rgba(41, 121, 168, 0.658);
+   display: none; 
+   width: 50%;
+   height: 50vh;
+   transition-duration: 2s;
+}    */
+
+
+.cover{
+  
+  background-color: rgba(58, 173, 58, 0.616);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+ 
+  transition-duration: 1s;
+}
+
+
+input[type="checkbox"]:checked + label .cover{
+  display: block;
+}
+
+input[type="checkbox"]:checked + label span:nth-child(2){
+  /* transform: rotate(30deg); */
+  display: none;
+
+}
+
+input[type="checkbox"]:checked + label span:nth-child(1){
+  
+  /* top: 50%; */
+  top: 33px;
+   /* transform: rotate(45deg); */
+  transform: rotate(56deg); 
+}
+
+input[type="checkbox"]:checked + label span:nth-child(3){
+  
+  top: 33px;
+  /* top: 50%; */
+  /* transform: rotate(-45deg); */
+  transform: rotate(122deg); 
+}
+
+
+input[type="checkbox"]:checked + label .cover{
+  display: block;
+  transform: scale(40);
+ 
+}
+
+
+/* --------------------------------------PART2---------- */
+.header{ color: green; text-align: center;}
+
+ .textContainer{
+   width: 35%;
+ }  
+  .imgContainer{width: 55%;} 
+
+
+.contentdiv{  
+  display: inline-block;
+  overflow: hidden;
+  height: 400px;
+  padding: 10px;
+  top: 38px;
+  left: 75px;
+  }
+  .imgContainer{
+      position: relative;
+  }
+  .imgContainer img{
+      width: 200px;
+      position: absolute;
+  }
+  .imgContainer img:nth-child(3){
+      left: 43px;
+      top:120px
+  }
+  .imgContainer img:nth-child(2){
+      left: 155px;
+      top:20px
+  }
+  .imgContainer img:nth-child(1){
+      left: 5px;
+      top:10px
+  }
+  .imgContainer img:hover{
+      outline-offset: 10px;
+      outline: 10px solid lightgreen;
+      width: 250px ;
+      z-index: 3;
+  }
+
+  p{
+    font-size: small;
+  }
+  
+  /* -----------------------------PART3----------------------- */
+
+  .part3{
+    height: 120vh;
+    /* margin: 30px; */
+    background: linear-gradient(to right top, rgba(127, 251, 26, 0.534),
+  rgba(88, 209, 18, 0.479)), url(../imgs/nat-6.jpg) no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 15%,100% 0%,100% 70%,0% 90%);
+  position: relative;
+  }
+
+
+  .container{
+    display: flex;
+    flex-flow:wrap ;
+    flex-direction:row;
+    justify-content: center;
+    position: absolute;
+    top: 141px;
+    left: 100px;
+   
+  }
+
+  .container>.flex{
+   
+    height: 200px;
+    width: 150px;
+    margin: 10px;
+    text-align: center; 
+    background-color:white;
+    
+  }
+
+   .flex:hover{
+    transform:scale(1.1);
+   } 
+
+  .flex>.icons{
+    padding-top: 10px;
+    font-size:30px;
+    color: green;
+
+  }
+
+  .flex>h6{
+    color: rgba(128, 128, 128, 0.795);
+  }
+
+  .flex>span{
+    font-size: 10px;
+    color: rgba(128, 128, 128, 0.795);
+  }
+
+  /* --------------------------------PART4K------------------------------ */
+
+
+
+
+
+.card{
+  /* OR YOU CAN DO OVERFLOW  */
+/* you can write max-height=  you can find it in COMPUTED - FILTER - HEIGHT */
+/* height: 20vh;  we had it at first that we now where is div */
+/* background-color: rgba(78, 70, 70, 0.575);   we had it at first that we now where is div*/
+margin: 20px;
+position: relative;   
+/* background-color:white;
+box-shadow: 1px 7px 17px #8b8888; */
+border-radius: 10px ;    
+}
+
+
+
+                                          /* ----------IMGS--------------- */
+.img1{
+  height: 150px;
+  background-image:linear-gradient( rgba(126, 128, 0, 0.479) , rgba(166, 167, 135, 0.479) ) , url(../imgs/nat-5.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+  border-radius: 10px  10px 0 0;
+
+}
+
+.img2{
+  height: 150px;
+  background-image:linear-gradient( rgba(0, 128, 0, 0.479) , rgba(135, 167, 135, 0.479) ) , url(../imgs/nat-6.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+  border-radius: 10px 10px 0 0 ;
+}
+
+.img3{
+  height: 150px;
+  background-image:linear-gradient( rgba(0, 124, 128, 0.479) , rgba(125, 165, 172, 0.479) ) , url(../imgs/nat-7.jpg);
+  background-size: cover;
+  clip-path: polygon(0 0 , 100% 0 ,100% 80% ,0 100%);
+  border-radius: 10px 10px 0 0  ;
+}
+
+                          /* -------------BOX1 TITLE----------- */
+.title1{
+  position: absolute;
+  top: 85px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(141, 93, 5) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+.title2{
+  position: absolute;
+  top: 115px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(141, 93, 5) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+                          /* ----------BOX2 TITLE------------ */
+.title3{
+  position: absolute;
+  top: 85px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(59, 141, 5) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+.title4{
+  position: absolute;
+  top: 115px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(204, 203, 202) 0%, rgb(100, 141, 5) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+                          /* ----------BOX3 TITLE--------------- */
+.title5{
+  position: absolute;
+  top: 85px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(202, 203, 204) 0%, rgb(5, 98, 141) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+.title6{
+  position: absolute;
+  top: 115px;
+  right: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to top ,rgb(202, 204, 204) 0%, rgb(5, 91, 141) 100%);
+  /* background-color: rgba(182, 127, 26, 0.836); */
+  padding: 5px;
+}
+
+                      /* -------------BOX1 LIST--------------- */
+
+.list{
+  list-style-type: none;
+  margin-top: 20px;
+  text-align: center;
+  color: rgba(128, 128, 128, 0.671);
+  font-size: smaller;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+.list>li{
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+.list>li:last-child{
+  border-bottom: none;
+}
+
+  /* ----------------------i have respansiv or @media in liberi---------------------- */
+
+  .flip{
+      background-color: transparent;
+      width: 25vw;
+      height: 87vh;
+      perspective: 1000px;
+ 
+  }
+  .base{
+      border-radius: 10px;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style:preserve-3d ;
+      transition: all 1s;
+      
+  }
+  .flip:hover .base{
+      transform: rotateY(180deg);
+  }
+  
+  .back , .front{
+      backface-visibility: hidden;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      border-radius: 10px;
+  }
+  
+
+  .front{
+      background-color: rgba(223, 215, 215, 0.795) ;
+  }
+  
+  .back{
+      background-color: rgba(0, 128, 128, 0.74);
+      transform: rotateY(180deg);
+  }
+
+  .backcolor1{
+    background-color: rgba(255, 166, 0, 0.815);
+  }
+  .backcolor2{
+    background-color: rgba(50, 146, 106, 0.808);
+  }
+  .backcolor3{
+    background-color: rgba(0, 0, 255, 0.808);
+  }
+
+  .back2{
+    position: relative;
+  }
+  .odb{
+    position: absolute;
+    top: 35%;
+    left: 34%;
+  }
+
+  .odb>h5{
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .scalediv>span{
+    line-height: 30px;
+    color: rgba(128, 128, 128, 0.856);
+  }
+
+  .odb>.dolar{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+  }
+  
+  .odb>.backcircel{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 11px;
+    text-align: center;
+    transition-duration: 1s;
+  }
+  .scalediv{
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 11px;
+    text-align: center;
+    transition-duration: 1s;
+  }
+
+
+  
+
+  .scalediv:hover{
+    transform: scale(1.5);
+    opacity: 0;
+  }
+/* -----------------------------------------------------------respoback */
+  .odbrespo{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(255, 166, 0, 0.815);
+    clip-path: polygon(0 3%, 100% 28%, 100% 99%, 0% 100%);
+    border-radius: 5px;
+    bottom: 1px;
+     display: none; 
+  }
+  .odbrespo>h5{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+   
+  }
+  .backcircel>span{
+    
+    color: rgba(128, 128, 128, 0.856);
+  }
+
+  .odbrespo>.dolar{
+    line-height: 50px;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    padding-bottom: 1px;
+  }
+  
+  .odbrespo>.backcircel{
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 11px;
+    text-align: center;
+    transition-duration: 1s;
+    left:43%;
+  }
+
+
+  
+            /* -----------------------HANDY RESPANSIV--------------------------------- */
+@media only screen and  (max-width:600px){
+
+  /* IS BETTER WENN YOU WRITE contaner not col? */
+
+[class*=col]{
+float: left;
+width: 100%;
+}
+.container{
+width: 100%;
+}
+.base{
+width: 100%;
+}
+.flip{
+width: 100%;
+}
+.textContainer{
+  width: 100%;
+}
+ .imgContainer{
+  width: 100%;
+} 
+.img1part2{
+  width: 100%;
+}
+.odbrespo{
+  display: block;
+}
+
+}

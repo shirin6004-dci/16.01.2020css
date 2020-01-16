@@ -1,0 +1,37 @@
+
+@font-face{
+    font-family: shirin;
+    src: url(../fonts/Lovely\ fabulous.ttf);
+}
+
+
+
+ article h1 {
+    font-family: shirin;
+} 
+
+  /* ---------------------------------------------------------- */
+
+@font-face{
+    font-family: shirin2;
+    src: url(../fonts/1.ttf);
+}
+
+
+article p{
+    font-family: shirin2;
+}
+
+
+/* ------------------------------------- */
+
+/* 
+font-family: 'Inria Serif', serif;
+font-family: 'Gelasio', serif; */
+
+
+div {
+
+    font-family: 'Gelasio', serif;
+
+}

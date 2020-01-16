@@ -1,0 +1,36 @@
+.list li::after {
+
+    /* content: url();  you can put there foto also*/
+      
+
+
+
+    content: "remember me";
+}
+/* content: "\00a0 \00a0";     you can put space */
+
+
+.list li::before{
+    content: "\00a0 \00a0";
+}
+
+.first::first-line{
+color: red;
+}
+
+.first::first-letter{
+    color: black;
+    font: bold;
+    font-size: larger;
+}
+
+.first::selection {
+    color: red;
+    background: yellow;
+  }
+  .first::spelling-error{
+      /* that work mit in text area or input  (no work)*/
+      background-color: blue;
+  }
+  
+  

@@ -1,0 +1,67 @@
+
+
+
+.txt{
+    margin-top: 10%;
+    width: 400px;
+    height: 50vh;
+    display: inline-block;
+}
+
+ /* bayad div be ham bechasboni */
+.img{
+    margin-top: 10%;
+    width: 400px;
+    height: 50vh;
+    display: inline-block; 
+    position: relative;
+}
+
+
+
+
+
+
+
+.img1 , .img2 , .img3 {
+    width: 200px;
+    height: 200px;
+       
+
+}
+
+img:hover{
+     /* muss select just img not othres */
+    padding: 20px;
+    outline: 1px solid green;
+    /* or outline-offset: 10px; */
+    width: 250px;
+    z-index: 3;
+
+     
+    
+
+ }
+
+
+/* ist better writ :nth-child()  better than class or id for each img
+
+.img img:nth-child(1)*/
+.img1{
+    right: -78%;
+    top:10px;
+     position: absolute;
+}
+
+ .img2{
+    right: -41%;
+    top: -47px;
+    position: absolute;
+} 
+
+
+.img3{
+    right: -67%;
+    bottom: 4%;
+    position: absolute;
+}

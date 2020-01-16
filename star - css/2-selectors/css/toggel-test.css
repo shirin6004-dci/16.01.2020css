@@ -1,0 +1,11 @@
+
+.nav{
+    display: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.toggelbox:checked ~ .nav{
+    display: block;
+}

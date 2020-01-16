@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.div1{
+    height: 10vh;
+    background-color: chocolate;
+}
+
+.div2{
+    height: 50vh;
+    background-color: cornflowerblue;
+}
+
+.div3{
+    height: 50vh;
+    background-color: black;
+}
+
+.div4{
+    height: 30vh;
+    background-color: blueviolet;
+}
+
+.div5{
+    height: 30vh;
+    background-color: brown;
+}
+
+.div6{
+    height: 10vh;
+    background-color: burlywood;
+}

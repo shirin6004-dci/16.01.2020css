@@ -1,0 +1,46 @@
+
+
+/* 
+.somelink{
+    color: red;
+    font-size: 30px;
+}
+
+.somelink:visited{
+    color:rgb(25, 19, 31);
+}
+
+.somelink:active{
+    color: green;
+}
+
+#sh{
+    display: none;
+}
+ */
+
+
+
+/* title::selection:hover{
+    color: brown;
+}
+
+
+
+title::before:hover{
+
+    color: blue;
+}
+    */
+
+  
+  input[type="checkbox"]:checked + label {
+
+       color: brown;
+   } 
+
+
+/* 
+   a[href~="#someplace"] {
+       color: green;
+   } */
