@@ -7,7 +7,7 @@
     height: 90vh;
     clip-path: polygon(0% 0%,100% 0%,100% 60%,0% 100%); 
     position: relative;
-    margin: 20px;
+   margin: 20px; 
 }
 .awesome{
   position: absolute; 
@@ -169,9 +169,9 @@ input[type="checkbox"]:checked + label .cover{
 .header{ color: green; text-align: center;}
 
  .textContainer{
-   width: 35%;
+   width: 40%;
  }  
-  .imgContainer{width: 55%;} 
+  .imgContainer{width: 50%;} 
 
 
 .contentdiv{  
@@ -214,36 +214,39 @@ input[type="checkbox"]:checked + label .cover{
   
   /* -----------------------------PART3----------------------- */
 
-  .part3{
+  
+
+  .container{
     height: 120vh;
+    width: 90%;
     /* margin: 30px; */
     background: linear-gradient(to right top, rgba(127, 251, 26, 0.534),
   rgba(88, 209, 18, 0.479)), url(../imgs/nat-6.jpg) no-repeat;
   background-size: cover;
   clip-path: polygon(0% 15%,100% 0%,100% 70%,0% 90%);
-  position: relative;
-  }
-
-
-  .container{
+    /* position: relative; */
     display: flex;
     flex-flow:wrap ;
     flex-direction:row;
     justify-content: center;
-    position: absolute;
-    top: 141px;
-    left: 100px;
+    align-content: center;
+    padding: 10px;
+    top: -29px;
+    
    
   }
 
   .container>.flex{
-   
+    /* position: absolute; */
     height: 200px;
     width: 150px;
-    margin: 10px;
+   
     text-align: center; 
-    background-color:white;
+    background-color:white;  
+    align-content: center;
     
+    
+   
   }
 
    .flex:hover{
@@ -277,7 +280,7 @@ input[type="checkbox"]:checked + label .cover{
 /* you can write max-height=  you can find it in COMPUTED - FILTER - HEIGHT */
 /* height: 20vh;  we had it at first that we now where is div */
 /* background-color: rgba(78, 70, 70, 0.575);   we had it at first that we now where is div*/
-margin: 20px;
+margin: 10px;
 position: relative;   
 /* background-color:white;
 box-shadow: 1px 7px 17px #8b8888; */

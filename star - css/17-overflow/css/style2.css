@@ -1,11 +1,14 @@
 .conter {
-    width: 80%;
+    width: 40%;
     height: 70vh;
-    overflow-y: hidden;
-    overflow-x: scroll;
+    overflow: hidden;
+    /* overflow-x: scroll; */
     margin: auto;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
+    position: relative;
+    
+
 
 }
 
@@ -13,7 +16,13 @@
 
 
 .imges {
-    width: 240vw;
+    position: absolute;
+    width: 120vw;
+    right: 1px;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-name: foto;
+
 }
 
 
@@ -21,29 +30,61 @@
 
 .img {
     height: 70vh;
-    width: 80vw;
+    width: 40vw;
     background-image: url(../img/nat-5.jpg);
     background-size: cover;
+
     float: left;
 
 }
 
 .img2 {
     height: 70vh;
-    width: 80vw;
+    width: 40vw;
     background-image: url(../img/nat-6.jpg);
     background-size: cover;
     float: left;
-
-
 }
 
 .img3 {
     height: 70vh;
-    width: 80vw;
+    width: 40vw;
     background-image: url(../img/nat-7.jpg);
-
     background-size: cover;
     float: left;
+
+}
+
+@keyframes foto {
+
+    0% {
+        opacity: 1;
+        left: 0;
+
+    }
+
+    33.33% {
+        opacity: 1;
+        left: -80vw;
+    }
+
+
+    66.66% {
+        opacity:0;
+        left: -160;
+
+    }
+
+    100% {
+        opacity: 1;
+        left: 0vw;
+    }
+
+
+
+
+
+
+
 
 }

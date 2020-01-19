@@ -1,0 +1,29 @@
+@import 'main';
+
+
+
+$farbe : grey;
+$font : 20px ;
+
+
+
+.container{
+    border:2px solid black;
+    
+    &>div{
+        background-color:$farbe;  
+
+        &:nth-child(1){
+        font-size: $font;
+
+        &>p{
+            color: rgb(199, 125, 56);
+        }
+      }
+    }
+  
+}
+
+.banner {
+    background-color: $farbe;
+}
