@@ -1,0 +1,15 @@
+@mixin leyaoutcolor($blacolor , $blasize) {
+    color: $blacolor;
+    font-size: $blasize;
+    border: 5px solid green;
+    
+}
+
+.blaclass{
+    box-shadow: 5px 4px 3px lightcoral;
+    @include leyaoutcolor(lightcoral,30px )
+}
+
+.blablaclass{
+    @include leyaoutcolor(rgb(87, 59, 52), 50px )
+}

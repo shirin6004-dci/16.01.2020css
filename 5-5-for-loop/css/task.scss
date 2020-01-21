@@ -1,0 +1,25 @@
+@for $var from 0 to 20 {
+    .divClass#{$var+1} {
+        height: 20px;
+        @if $var+1 == 9 {
+            background-color: green;
+        } 
+        @else {
+             background-color: rgb(255, 255,255)- rgb(13, 13, 13) * $var;
+        }
+       
+        
+    }
+    
+}
+
+
+
+
+// or 
+//  .container{
+//      @for $var from 1 to 21 {
+//          &> div :nth-child(#{$var}) 
+       //         { background-color:with-(with / 19) * $var}
+//      } 
+//  }

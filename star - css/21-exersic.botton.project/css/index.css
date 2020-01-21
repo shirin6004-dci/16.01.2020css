@@ -4,7 +4,7 @@
   rgba(88, 209, 18, 0.479)), url(../imgs/nat-6.jpg) no-repeat;
   background-size: cover;
   background-position: top;
-    height: 90vh;
+    height: 94vh;
     clip-path: polygon(0% 0%,100% 0%,100% 60%,0% 100%); 
     position: relative;
    margin: 20px; 
@@ -167,13 +167,13 @@ input[type="checkbox"]:checked + label .cover{
 
 /* --------------------------------------PART2---------- */
 .header{ color: green; text-align: center;}
+ 
+ 
 
- .textContainer{
-   width: 40%;
- }  
-  .imgContainer{width: 50%;} 
-
-
+.textContainer{
+  width: 40%;
+}  
+.imgContainer{width: 50%;}  
 .contentdiv{  
   display: inline-block;
   overflow: hidden;
@@ -190,16 +190,16 @@ input[type="checkbox"]:checked + label .cover{
       position: absolute;
   }
   .imgContainer img:nth-child(3){
-      left: 43px;
+      left: 163px;
       top:120px
   }
   .imgContainer img:nth-child(2){
-      left: 155px;
+      left: 288px;
       top:20px
   }
   .imgContainer img:nth-child(1){
-      left: 5px;
-      top:10px
+      left: 109px;
+      top:20px
   }
   .imgContainer img:hover{
       outline-offset: 10px;
@@ -219,7 +219,7 @@ input[type="checkbox"]:checked + label .cover{
   .container{
     height: 120vh;
     width: 90%;
-    /* margin: 30px; */
+     /* margin: 30px;  */
     background: linear-gradient(to right top, rgba(127, 251, 26, 0.534),
   rgba(88, 209, 18, 0.479)), url(../imgs/nat-6.jpg) no-repeat;
   background-size: cover;
@@ -240,7 +240,7 @@ input[type="checkbox"]:checked + label .cover{
     /* position: absolute; */
     height: 200px;
     width: 150px;
-   
+   margin: 10px;
     text-align: center; 
     background-color:white;  
     align-content: center;
@@ -519,6 +519,8 @@ border-radius: 10px ;
     bottom: 1px;
      display: none; 
   }
+  .color2{ background-color: rgba(50, 146, 106, 0.808);}
+  .color3{background-color: rgba(0, 0, 255, 0.808);}
   .odbrespo>h5{
     color: white;
     text-align: center;

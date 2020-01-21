@@ -1,0 +1,10 @@
+
+*{
+    padding: 0;
+}
+
+@mixin groupClass {
+    border: 5px solid black;
+    color: red;
+    
+}
