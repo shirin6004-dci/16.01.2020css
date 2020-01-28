@@ -1,0 +1,196 @@
+$facebookcolor:#3b5998;
+$watsap:green;
+$instacolor:#bd218e;
+$callcolor:rgb(39, 177, 39);
+$website:rgb(44, 93, 199);
+$green: #229977;
+$light-gray: #777;
+$dark-gray: rgb(32, 35, 48);
+$backgraundcolor:rgba(128, 128, 128, 0.39);
+$boxfarde:white;
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+.footerbackground{
+    background-color: $dark-gray;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+
+}
+    .inernet{
+    
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px;
+    grid-template-rows:  50px 50px 50px 50px 50px 50px;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    width: 50px;  
+    transform-style: preserve-3d; 
+    perspective: 600px;
+    position: relative;    
+    top: 76vh; 
+    transform: rotate3d(2, -1, 1, 59deg);
+   
+
+    li{
+        
+        list-style-type: none;
+        text-align: center;
+        position: absolute;
+        background-color:$website;
+         padding: 15px;
+        border-radius: 5px;
+        font-size: larger; 
+         
+         
+        
+                        i{
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 6px;
+                            border: gray;
+                            color: $light-gray;
+                            color: rgb(119, 118, 118);
+                        }
+                   
+
+            &:nth-child(1){ transform: rotateY(0deg) translateZ(25px) ; };
+            &:nth-child(2){transform: rotateY(90deg)   translateZ(25px);};
+            &:nth-child(3){transform: rotateY(180deg) translateZ(25px);};
+            &:nth-child(4){transform: rotateY(-90deg) translateZ(25px);};
+            &:nth-child(5){transform: rotateX(90deg) translateZ(26px);};
+            &:nth-child(6){transform: rotateX(-90deg) translateZ(27px);};
+                      
+
+     }
+
+
+     .bottomshodow{
+        box-shadow: -12px 9px 39px 2px #111;
+     }
+
+
+    }
+
+
+
+.internet1{
+    position: absolute;
+    left: 30%;
+    height: 29vh;
+    
+    
+    
+        li{
+            background-color: $website;  
+          }
+            :hover{
+         transform: scale(2);
+         color: $dark-gray;
+     }
+}
+
+
+
+.facebook{
+    position: absolute;
+    left: 37%;
+    height: 29vh;
+            li{
+            background-color: $facebookcolor;  
+         }
+            :hover{
+         transform: scale(2);
+            color: $dark-gray;
+         }   
+}
+
+.instagram{
+    position: absolute;
+    left: 44%;
+    height: 29vh;
+           li{
+            // background-image: linear-gradient(to right, rgb(255, 0, 242) , yellow);
+            //    background-color: $instacolor;  
+          }
+               :hover{
+                    transform: scale(2);
+                    color: $dark-gray;
+                }
+
+                .gradient1{background-image: linear-gradient(to right, rgb(255, 0, 242) , yellow);}
+                .gradient2{background-image: linear-gradient(to right, rgb(255, 0, 242) , yellow);}
+                .gradient3{background-image: linear-gradient(to top, rgb(255, 0, 242) , yellow);}
+}
+.phone{
+    position: absolute;
+    left: 51%;
+    height: 29vh;
+
+        li{
+            background-color: $callcolor;
+        }
+            :hover{
+                transform: scale(2);
+                color: $dark-gray;
+            }
+}
+
+.watsapp{
+    position: absolute;
+    left: 58%;
+    height: 29vh;
+
+        li{
+            background-color: $watsap ;
+        }
+            :hover{
+                transform: scale(2);
+                color: $dark-gray;                
+            }
+}
+
+ul.foorespo{
+    
+        width: 100%;
+        height: 100vh;
+        background-color: $dark-gray;
+        list-style-type: none;
+        font-size: 50px;
+        
+        top: 20px;
+        display: none;
+        position: relative;
+
+
+        li{
+            position: absolute;
+            
+        }
+   
+       li:nth-child(1){color: $website;top: 50%;left: 45%;};
+        li:nth-child(2){color: $facebookcolor;top: 60%;left: 45%;};
+        li:nth-child(3){color: $instacolor;top: 70%; left: 45%;};
+        li:nth-child(4){color: $callcolor; top: 80%;left: 45%;};
+        li:nth-child(5){color: $watsap; top: 90%;left: 45%;};
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+    .inernet{display: none;}
+    ul.foorespo{
+
+            display: block;
+            transition-duration: 2s;
+    }
+
+   }
+
