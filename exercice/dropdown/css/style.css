@@ -1,0 +1,147 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: burlywood; */
+}
+
+body{
+    background-color:black; 
+}
+
+
+
+nav>ul{
+    list-style-type: none;
+   
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    width:381px ;
+    padding-left: 20px; 
+    padding-top: 5px;
+
+
+}
+
+nav>ul>li{
+    float: left;
+    margin-right: 20px;
+    /* padding: 10px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(36, 35, 35);
+    width: 100px;
+    border-radius: 10px 0;
+
+}
+
+nav>ul>li>label{
+    display: block;
+    
+}
+
+
+nav>ul>li>label:hover{
+    font-weight: bolder;
+    /* box-shadow: 5px 5px 5px 5px white; */
+    /* background-color: rgba(163, 157, 157, 0.233); */
+    /* background-color: black; */
+    font-size: large;
+    color: white;
+
+}
+
+
+.baner{
+    margin-top: 10px;
+    background-image: url(../img/hero.jpg);
+    height: 80vh;
+    margin-left: 10px;
+    margin-right: 10px;
+   clip-path: polygon(0 0,100% 0,100% 60vh,0 100%); 
+    border-radius: 15px 0;
+    background-position: 36% 19%;
+    background-image: cover;
+}
+
+
+section , input{
+    display: none;
+    color: white;
+}
+
+input:checked + section{
+    display: block;
+}
+
+.dropdown{
+    position: relative;
+    z-index: 3;
+    display: none;
+    margin-top: 20px;
+      
+}
+
+.dropdown ul{
+    /* background-color: white; */
+    list-style-type: none;
+  
+}
+
+.dropdown ul>li{
+    
+    margin-bottom: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.dropdown ul>li>a{
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    display: block;
+    border-radius: 5px 0 5px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.dropdown ul>li>a:hover{
+    font-size: large;
+}
+
+
+
+nav>ul>li:hover>.dropdown{
+    display: block;
+
+}
+
+
+
+/* ----------------------------------------------------------------------- */
+
+
+
+
+
+@media only screen and (max-width:390px){
+
+
+    /* body{
+        background-color: white;
+    } */
+
+    nav>ul{
+        width: 100%;
+        height: 150px;
+        padding-left: 0; 
+    }
+    nav>ul>li{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+}

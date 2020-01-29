@@ -1,0 +1,57 @@
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    
+}
+
+
+.box:hover{
+    transform:rotate(360deg);
+    transition-duration: 5s;
+}
+
+
+.pers{
+    background-color: transparent;
+    width:100px ;
+    height: 100px;
+    perspective: 1000px;
+    
+}
+
+.inn{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+ }
+
+.pers:hover .inn{
+    transform: rotateY(180deg);
+}
+
+
+
+
+.box1 , .box2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    backface-visibility: hidden;
+     
+}
+
+
+
+
+.box1{
+    background-color: blue;
+}
+
+.box2{
+    background-color: brown;
+    transform: rotateY(180deg);
+}
