@@ -1,0 +1,196 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== FONTS =====*/
+@font-face {
+  font-family: 'light';
+  src: url(../fonts/Raleway-Thin.ttf);
+}
+
+@font-face {
+  font-family: 'medium';
+  src: url(../fonts/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'bold';
+  src: url(../fonts/Raleway-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'extra-bold';
+  src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+
+/* ===== END FONTS =====*/
+/* ===== COLORS / SIZES =====*/
+/* ===== END COLORS =====*/
+/* ===== MIXIN =====*/
+/* ===== END MIXIN =====*/
+.background {
+  background-color: #202330;
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid #229977;
+}
+
+.background .ulcub {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px 200px 200px;
+  -ms-grid-rows: 100px 100px 100px 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 20vh;
+  width: 20vw;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-animation-name: rotate;
+          animation-name: rotate;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  position: relative;
+  left: 40%;
+  top: 20vh;
+}
+
+.background .ulcub li {
+  list-style-type: none;
+  text-align: center;
+  position: absolute;
+}
+
+.background .ulcub li:nth-child(1) {
+  -webkit-transform: rotateY(0deg) translateZ(50px);
+          transform: rotateY(0deg) translateZ(50px);
+}
+
+.background .ulcub li:nth-child(2) {
+  -webkit-transform: rotateY(90deg) translateZ(50px);
+          transform: rotateY(90deg) translateZ(50px);
+}
+
+.background .ulcub li:nth-child(3) {
+  -webkit-transform: rotateY(180deg) translateZ(50px);
+          transform: rotateY(180deg) translateZ(50px);
+}
+
+.background .ulcub li:nth-child(4) {
+  -webkit-transform: rotateY(-90deg) translateZ(50px);
+          transform: rotateY(-90deg) translateZ(50px);
+}
+
+.background .ulcub li:nth-child(5) {
+  -webkit-transform: rotateX(90deg) translateZ(50px);
+          transform: rotateX(90deg) translateZ(50px);
+}
+
+.background .ulcub li:nth-child(6) {
+  -webkit-transform: rotateX(-90deg) translateZ(50px);
+          transform: rotateX(-90deg) translateZ(50px);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  12% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  37% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  50% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  65% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  74% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  86% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+  }
+  12% {
+    -webkit-transform: rotateX(90deg);
+            transform: rotateX(90deg);
+  }
+  25% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  37% {
+    -webkit-transform: rotateX(270deg);
+            transform: rotateX(270deg);
+  }
+  50% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  65% {
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+  74% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+  }
+  86% {
+    -webkit-transform: rotateY(270deg);
+            transform: rotateY(270deg);
+  }
+  100% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+.background .ulcub li img {
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ulcub {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .ulcub > li {
+    grid-column: inherit !important;
+    display: contents;
+  }
+}
+/*# sourceMappingURL=style.css.map */

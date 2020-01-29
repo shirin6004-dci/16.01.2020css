@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== FONTS =====*/
+
+@font-face {
+    font-family: 'light';
+    src: url(../fonts/Raleway-Thin.ttf)
+}
+
+@font-face {
+    font-family: 'medium';
+    src: url(../fonts/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/Raleway-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'extra-bold';
+    src: url(../fonts/Raleway-ExtraBold.ttf)
+}
+
+/* ===== END FONTS =====*/
+
+/* ===== COLORS / SIZES =====*/
+
+$green: #229977;
+$light-gray: #777;
+$dark-gray: rgb(32, 35, 48);
+
+$headline: 30px;
+$content: 16px;
+
+/* ===== END COLORS =====*/
+
+/* ===== MIXIN =====*/
+
+@mixin headline {
+    font-size: $headline;
+    font-family: 'extra-bold';
+    color: $green;
+}
+
+@mixin content {
+    font-size: $content;
+    font-family: 'light';
+    color: $light-gray;
+}
+
+/* ===== END MIXIN =====*/

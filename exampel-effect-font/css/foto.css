@@ -1,0 +1,31 @@
+.img{
+    position: relative;
+   width: 200px;
+   height: 200px;
+   background-image: cover;
+}
+
+.span1{
+    position: absolute;
+    width: 50px;
+    height:200px;
+    background-image: url(../img/nat-7.jpg);
+}
+
+
+.span2{
+    left: 50px;
+    position: absolute;
+    width: 100px;
+    height:200px;
+    background-image: url(../img/nat-7.jpg);
+
+}
+
+.span3{
+    left: 100px;
+    position: absolute;
+    width: 150px;
+    height:200px;
+    background-image: url(../img/nat-7.jpg);
+}
