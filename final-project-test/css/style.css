@@ -1,0 +1,113 @@
+.withHeight, .scene {
+  width: 400px;
+  height: 400px;
+}
+
+.center, .scene > .cube.cube > .face {
+  left: 50%;
+  top: 30%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.scene {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+}
+
+.scene > .cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  text-align: center;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+
+.scene > .cube.cube > .face {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border: 1px solid black;
+}
+
+.scene > .cube > .face-front {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+}
+
+.scene > .cube > .face-back {
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+
+.scene > .cube > .face-right {
+  -webkit-transform: rotateY(180deg) translateZ(100px);
+          transform: rotateY(180deg) translateZ(100px);
+}
+
+.scene > .cube > .face-left {
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+}
+
+.scene > .cube > .face-top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+}
+
+.scene > .cube > .face-bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+}
+
+.scene > .cube:hover .face1 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face2 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face3 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face4 {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
+.scene > .cube:hover .face5 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face6 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face7 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+
+.scene > .cube:hover .face8 {
+  -webkit-transform: rotateY(90deg);
+          transform: rotateY(90deg);
+}
+/*# sourceMappingURL=style.css.map */

@@ -51,8 +51,7 @@
   height: 20px;
   border-radius: 6px;
   border: gray;
-  color: #777;
-  color: #777676;
+  color: white;
 }
 
 .inernet li:nth-child(1) {
@@ -81,8 +80,8 @@
 }
 
 .inernet li:nth-child(6) {
-  -webkit-transform: rotateX(-90deg) translateZ(27px);
-          transform: rotateX(-90deg) translateZ(27px);
+  -webkit-transform: rotateX(-90deg) translateZ(25px);
+          transform: rotateX(-90deg) translateZ(25px);
 }
 
 .inernet .bottomshodow {
@@ -126,6 +125,10 @@
   position: absolute;
   left: 44%;
   height: 29vh;
+}
+
+.instagram li {
+  color: black;
 }
 
 .instagram :hover {

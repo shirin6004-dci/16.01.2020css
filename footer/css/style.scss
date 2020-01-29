@@ -53,8 +53,8 @@ $boxfarde:white;
                             height: 20px;
                             border-radius: 6px;
                             border: gray;
-                            color: $light-gray;
-                            color: rgb(119, 118, 118);
+                            color: white;
+                            
                         }
                    
 
@@ -62,8 +62,8 @@ $boxfarde:white;
             &:nth-child(2){transform: rotateY(90deg)   translateZ(25px);};
             &:nth-child(3){transform: rotateY(180deg) translateZ(25px);};
             &:nth-child(4){transform: rotateY(-90deg) translateZ(25px);};
-            &:nth-child(5){transform: rotateX(90deg) translateZ(26px);};
-            &:nth-child(6){transform: rotateX(-90deg) translateZ(27px);};
+            &:nth-child(5){transform: rotateX(90deg) translateZ(25px);};
+            &:nth-child(6){transform: rotateX(-90deg) translateZ(25px);};
                       
 
      }
@@ -102,6 +102,7 @@ $boxfarde:white;
     height: 29vh;
             li{
             background-color: $facebookcolor;  
+            
          }
             :hover{
          transform: scale(2);
@@ -114,8 +115,7 @@ $boxfarde:white;
     left: 44%;
     height: 29vh;
            li{
-            // background-image: linear-gradient(to right, rgb(255, 0, 242) , yellow);
-            //    background-color: $instacolor;  
+                color: black;
           }
                :hover{
                     transform: scale(2);
