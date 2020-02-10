@@ -65,7 +65,7 @@ function sum1 (op , nume1 , nume2 )
 
 // console.log(sum1( "-",3,5))
 
-function Even(number) {
+function isEven(number) {
     
     if (number  %2 == 0){
         return true
@@ -75,4 +75,18 @@ function Even(number) {
     }
 }
 
-console.log(Even( 5))
+// console.log(isEven( 5))
+
+
+function checknumber(namber) {
+    if (isEven(namber))
+        console.log("it is a Even")
+            else{
+                console.log("it is odd")
+            }
+    
+}
+
+// checknumber(6)
+
+
