@@ -1,13 +1,14 @@
-// function hop(num) {
-//     if(num != 0){
-//        console.log(hop(num -1))
-//     }
-//      return (num)
-// }
-// hop(5)
+ /*function hop(num) {
+     if(num != 0){
+        console.log(hop(num -1))
+     }
+      return (num)
+ }
+ hop(5) */
 
+ //==============================return=======================================
 
-function add(num) {
+/*function add(num) {
     if (num == 0){
         return 0
     }else{
@@ -15,30 +16,40 @@ function add(num) {
     }
     
 }
-console.log(add(5))
+console.log(add(5)) */
 
+//==============================fibonacci============================================
 
-// function fibonacci(num){
-//     var a = 1, b = 0, temp;
+ /*function fibonacci(num){
+    var a = 1, b = 0, temp;
   
-//     while (num >= 0){
-//       temp = a;
-//       a = a + b;
-//       b = temp;
-//       num--;
-//     }
+     while (num >= 0){
+       temp = a;
+       a = a + b;
+       b = temp;
+       num--;
+     }
   
-//     return b;
-//   }
-//   console.log(fibonacci(5))
+     return b;
+   }
+   console.log(fibonacci(5)) */
 
-
+//==============================bei-spiel for return==================================================
 function x(num) {
-    if (num != 1){
-        return x(num - 1) * num
+    if (num == 0){
+        return num
+         
+    } else{
+        let a = x(num - 1) + "," + num
+        return a
     }
-    return 1
+    
     
 }
 console.log(x(5))
 
+//--------------------------------------------------
+
+function textadd(num) {
+    
+}
