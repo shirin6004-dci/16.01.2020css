@@ -44,12 +44,35 @@ for (let i = 10; i >= 0 ; i--)  {
 let stage = 0
 
 
-for (var i = 10 ; i <= 50 ; i++){
+for (let i = 10 ; i <= 50 ; i++){
  
     stage = i + stage
 
 }
+//=============================*****DOM***********=======
+/*console.log( stage ) 
+document.write("hallo world <br> an fbw5 <br>")
 
-console.log( stage ) 
+
+
+for (let i = 0; i <= 10 ;i++) {
+   document.write(i + "<br>")
+    
+}
+
+
+
+
+
+for (let i = 1; i < 10; i++) {
+   for (let x = 1; x < 10; x++) {
+       document.write ( x + " <br>")
+       
+   }
+   document.write("again<br>")
+    
+} */
+
+
 
 

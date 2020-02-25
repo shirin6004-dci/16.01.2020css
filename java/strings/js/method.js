@@ -5,7 +5,7 @@
 /*console.log(str.search("r")) */
 
 
-//============= will return **SLICE** to us charakter from --- hier beispiel return (ha)
+//============= will return **SLICE** to us charakter from --- hier beispiel return (ha)=like **substr()
 //console.log(str.slice(0 , 2))
 
 
