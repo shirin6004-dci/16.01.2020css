@@ -11,3 +11,5 @@ async function getproduct(blakeyword,numpage,page) {            //! 1
     console.log(resultData)
 } 
 getproduct('cheese' , 10 , 1)           //!  4
+
+//=====================================

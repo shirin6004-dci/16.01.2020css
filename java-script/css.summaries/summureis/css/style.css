@@ -1,0 +1,196 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+/*--------------------------------- navigation------------------------------- */
+nav{
+    background-color: rgb(3, 23, 97);
+    width: 100%;
+}
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+     justify-content: center;
+ 
+}
+nav>ul>li>{
+   
+    position: absolute;
+    text-align: center;
+}
+
+nav>ul>li>a {
+    display: block;
+    /* margin: 10px; */
+    margin-left: 10px;
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    background-color: rgba(48, 64, 116, 0.952);
+    border-radius: 5px 1px;
+    transition: transform 0.5s, box-shadow 0.5s;
+    font-size: small;
+    
+
+}
+
+nav>ul>li>a:hover {
+    color: white;
+    box-shadow: 10px 10px 5px black;
+    transform: scale(1.2);
+}
+
+/*-------------------------------------------- banner ------------------------------------------- */
+.banner {
+    /* margin-top: 5px; */
+    height: 90vh;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 60vh, 0 80vh);
+
+}
+
+.contain {
+    display: flex;
+
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.h {
+    height: 70px;
+}
+
+h1 {
+    text-align: center;
+    color: rgba(48, 64, 116, 0.952);
+}
+
+
+
+.contain>div {
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    background-color: rgba(48, 64, 116, 0.952);
+    margin: auto;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.contain>div>h2 {
+    margin-top: 15px;
+    color: white;
+
+}
+
+.contain>div>p {
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    
+}
+/* ------------------------footer------------------------------------ */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    /* height: 200px; */
+    
+   
+     
+}
+.footer>.fo{
+    width: 33.3%;
+    background-color:rgb(3, 23, 97);
+    padding-left: 52px;
+    
+}
+.footer>.fo>a{
+    text-decoration: none;
+}
+.footer>.foo1>a{
+    display: block;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+
+}
+.footer>.foo2>a{
+    display: block;
+    font-size: 15px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.inputfooter>input{
+    display: block;
+}
+input::placeholder{
+    font-size: 8px;
+}
+
+.inputfooter>label{
+    font-size: 10px;
+    color: white;
+}
+#sms{
+   
+    min-height: 53px;
+}
+
+#click{
+    
+    margin-top: 5px;
+    width: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:480px) {
+    nav>ul {
+        flex-direction: column;
+        
+    }
+
+    nav>ul>li>a {
+        text-align: center;
+        margin: 2px;
+        
+    }
+
+    .contain {
+        margin: 0;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contain>div{
+        margin: 0;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .footer>.fo{
+        
+        width: 100%;
+    }
+
+}
