@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/task3.css">
+</head>
+
+<body>
+    <h1 class="pagetitle">inVoice</h1>
+    <div id="container">
+        <div class="products">
+            <div class="product">
+                <div>product1</div>
+                <div>product price</div>
+                <div>quantity</div>
+                <div>total</div>
+            </div>
+            <div class="product">
+                <div> <input type="text" id="text" name="text"> </div>
+
+                <div> <input type="number" min="0" value="0"></div>
+                <div> <input type="number" min='0' value="0"></div>
+                <div><span>0 Euro</span></div>
+            </div>
+        </div>
+
+    </div>
+    <a href="#" id="newproduct">new Enter</a>
+    <br>
+    <a href="#" id="invoicegenerate">invoice</a>
+    <span class="sumtotal">0 Euro</span>
+    <div id="printsection">
+        <h2>invoice for printing</h2>
+        <table id="printtable">
+            <thead>   <!-- will not remove-->
+                <tr>
+                    <th>product1</th>
+                    <th>product price</th>
+                    <th>quantity</th>
+                    <th>total</th>
+                </tr>
+            </thead>
+
+            <tbody> <!--4  will remove  (javascript)-->
+
+            </tbody>
+        </table>
+        <span class="sumtotal">0 Euro</span>
+    </div>
+
+    <script src="./js/task.3.js"></script>
+</body>
+
+</html>

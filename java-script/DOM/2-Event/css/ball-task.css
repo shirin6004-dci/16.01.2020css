@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#container{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    position: relative;
+}
+.ball{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(250, 6, 6);
+    border-radius: 50px;
+    left: 1px;
+}
+

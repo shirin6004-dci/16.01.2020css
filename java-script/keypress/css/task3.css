@@ -1,0 +1,18 @@
+.product{
+    display: flex;
+    justify-content: space-between;
+      /* text-align: center; */
+}
+
+.product>div{
+  width: 120px;
+}
+
+.sumtotal{
+  float: right;
+  margin-right: 50px;
+}
+
+#printtable{
+  width: 100%;
+}
