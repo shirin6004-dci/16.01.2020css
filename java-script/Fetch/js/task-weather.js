@@ -4,4 +4,4 @@ async function getData(keyWord) {
     console.log(data)
     //console.log(data.weather[0])
 }
-//getData(prompt('Weather'))
+getData(prompt('Weather'))
