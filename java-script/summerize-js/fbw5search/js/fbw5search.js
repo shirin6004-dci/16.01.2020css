@@ -1,3 +1,5 @@
+//*https://pixabay.com/api/docs/
+
 //1 write javascript function that will recive div'container' id as a parameter and 
 //1creat inside this div a text input
 //2 creat div change your previuos function to add input inside a div and this div suppose to be in the container
@@ -19,7 +21,9 @@
 //18 creat orientation list
 //19 category list
 //21. height
-function appInit(containId) {
+//12000491-41fc68d8c365df909e022ceb6     api 22.
+
+function appInit(containId, apiKey) {  //!22.1
 
     let appContainer = document.querySelector('#'+containId) //?1. 1 id adresse
     appContainer.classList.add('container') //? .5
@@ -126,7 +130,7 @@ function appInit(containId) {
                 div3.append(img)
 
             } */ //  + pageNumber = 1
-            getData(input1.value, div3, pagingdiv, 1, color, orientation, category, min_height, min_width) //!11. (input1.value)         //?10.  2      //!12.  4(div3)      //16 & 17.1 color (to use)
+            getData(input1.value, div3, pagingdiv, 1, color, orientation, category, min_height, min_width , apiKey) //!11. (input1.value)         //?10.  2      //!12.  4(div3)      //16 & 17.1 color (to use)
         })
     } else {
         console.log('element with Id "' + containId + ' "could not be found') //container not exist 
@@ -135,7 +139,7 @@ function appInit(containId) {
 
 //*   ========appInit('container')
 
-async function getData(keyword, imagesContainer, pagingContainer, pageNumber, colorElement, orientationelement, categoryElement, heightElement, widthElement) { //? 10.    1      //17.1
+async function getData(keyword, imagesContainer, pagingContainer, pageNumber, colorElement, orientationelement, categoryElement, heightElement, widthElement , Key) { //? 10.    1      //17.1   //!22.2
     //console.log(colorElement) 
     //console.log(colorElement.options[1])  17.3
     //console.log(colorElement.selectedIndex)   17.3
@@ -172,7 +176,7 @@ async function getData(keyword, imagesContainer, pagingContainer, pageNumber, co
 
 
     imagesContainer.innerHTML = ''
-    let respo1 = await fetch('https://pixabay.com/api/?key=12000491-41fc68d8c365df909e022ceb6&q=' + keyword + '&page=' + pageNumber + colorsparameters + orientationparameters + categoryParameters + heightparamerts + widthparamerts) //?17.2
+    let respo1 = await fetch('https://pixabay.com/api/?key='+Key+'&q=' + keyword + '&page=' + pageNumber + colorsparameters + orientationparameters + categoryParameters + heightparamerts + widthparamerts) //?17.2  //22.3
     if (respo1.status == 200) {
         let data = await respo1.json() //! convert to object
         console.log(data)
@@ -192,7 +196,7 @@ async function getData(keyword, imagesContainer, pagingContainer, pageNumber, co
             }
             //ADD event for page button
             button2.addEventListener('click', function (e) { //!20 click an button after search
-                getData(keyword, imagesContainer, pagingContainer, i + 1, colorElement, orientationelement, categoryElement, heightElement, widthElement) //!20 call function here > next page   ( i+1)to show first page b.w(i=0)       //17.1
+                getData(keyword, imagesContainer, pagingContainer, i + 1, colorElement, orientationelement, categoryElement, heightElement, widthElement,key) //!20 call function here > next page   ( i+1)to show first page b.w(i=0)       //17.1  //!22.3(key)
             })
 
         }
@@ -220,7 +224,15 @@ async function getData(keyword, imagesContainer, pagingContainer, pageNumber, co
 
 
 let Fbw5Search = {
+    Key : '' ,                          //22.1
     go: function (elementId) {
-        appInit(elementId)
+        if (this.Key) {         //22.1
+             appInit(elementId , this.Key)     //22.1 this.key
+        }else{
+            console.log('you did not enter Api key')
+        }
+       
     }
 }
+
+
