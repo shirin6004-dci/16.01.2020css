@@ -1,0 +1,33 @@
+#ulId{
+    width: 50%;
+    height: 60%;
+
+}
+
+#click{
+  text-align: center;
+    width: 200px;
+    height: 100px;
+}
+
+#click div{
+    width: 200px;
+    height: 100px;
+       background-color: cadetblue;
+    /* padding: 30px 60px; */
+    text-decoration: none;
+    color: white;
+   
+    
+}
+
+#ulId li{
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    /* padding: 30px 60px; */
+    list-style-type: none;
+    display: none;
+    text-align: center;
+}
+

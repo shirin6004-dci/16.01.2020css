@@ -1,0 +1,33 @@
+.div1{
+    width: 300px;
+    margin: auto;
+    background-color: coral;
+    text-align: center;
+    display: none;
+}
+
+
+.container{
+    margin-top: 100px;
+
+}
+
+.collapsTitle{
+    border: 2px solid black;
+    background-color: gray;
+}
+
+.collapsTitle a{
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: honeydew;
+}
+
+.collapseContent{
+    background-color: gray;
+    border: 2px solid black;
+    padding: 100px;
+    display: none;
+
+}

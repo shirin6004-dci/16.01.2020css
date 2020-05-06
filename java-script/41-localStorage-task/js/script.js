@@ -35,8 +35,10 @@ document.querySelector('#add').addEventListener('click', function () {
 })
 
 //let somthing = [{'name':'shirin' , 'grades':[{'math' : 90 , 'english' : 90 }]}]
+function calllocalStorage() {
+    
 
-let save = document.querySelector('#save').addEventListener('click', function () {
+ document.querySelector('#save').addEventListener('click', function () {
     if (studentName.value.trim() != '') {
         let student = {
             name: studentName.value,
@@ -47,14 +49,14 @@ let save = document.querySelector('#save').addEventListener('click', function ()
         console.log('studentArr', studentarr);
         callback(studentarr)
     }
-    gradesArr = []
-    ul.innerHTML = ''
+    //gradesArr = []
+   // ul.innerHTML = ''
     studentName.value = ''
     studentGradeinp.value = ''
 })
 
-
-
+}
+calllocalStorage()
 
 
 // to bring data from local storage--------------------------------
@@ -66,9 +68,10 @@ console.log('mejson', mejson);
 if (mejson != null) {
     let meobject = this.JSON.parse(mejson)
     //  console.log( 'meobject', meobject)
-    
+
     function callback(x) {
         x.forEach(element => {
+      studentarr.push(element)  //! put firs element in student arr 
             let h2 = document.createElement('h2')
             h2.innerText = element.name
             // console.log(h2.innerText)

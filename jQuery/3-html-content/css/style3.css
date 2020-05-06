@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.collapse{
+    background-color: rgb(196, 190, 190);
+    border: 1px solid black;
+}
+.collapse > h2 {
+    background-color: gray;
+    padding: 10px;
+}
+.collapse > h2 > span {
+    cursor: pointer;
+}
+
+.collapse > h2 > span:after{
+    content:" +";
+    font-size:20px;
+}
+.collapse > h2 > span.close:after{
+    content:"-";
+}
+
+
+.collapse > div {
+    padding: 10px;
+    display: none;
+}
+
+
+#mines{
+    display: none;
+}
