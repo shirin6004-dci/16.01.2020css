@@ -31,3 +31,10 @@
     text-align: center;
 }
 
+/* .collapse > h2 > span:after{
+    content:" +";
+    font-size:20px;
+}
+.collapse > h2 > span.close:after{
+    content:"-";
+} */

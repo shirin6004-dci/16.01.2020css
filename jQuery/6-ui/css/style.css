@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.list>li>h2>span{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/move.jpg);
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+
+.list>li{
+    margin-top: 10px;
+    background-color: palevioletred;
+}
+
+
+.list >li.unsotable{
+    margin-top: 10px;
+    background-color: gray;
+}

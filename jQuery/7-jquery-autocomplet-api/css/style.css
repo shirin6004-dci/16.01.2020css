@@ -1,0 +1,26 @@
+.pruducts{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.pruducts>div>span.gold{
+background-image: url('../imgs/star-gold.png');
+width: 10px;
+height: 10px;
+display: inline-block;
+background-size: cover;
+}
+
+
+.pruducts>div>span.gray{
+ 
+        background-image: url('../imgs/star-gray.png');
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        background-size: cover;
+   
+}
