@@ -33,7 +33,10 @@ $('#productInput').keyup(function (e) {         //! 2
    }
 });
 
-
+$('.autocompleteclass li').click(function (e) { 
+    e.preventDefault();
+    
+});
 
   } );
 
@@ -71,7 +74,7 @@ dummy to testing
    $( "#productInput" ).autocomplete({
         source: data,
         classes: {
-          "ui-autocomplete": "autocompleteclass",
+          "ui-autocomplete": "autocompleteclass",  //style in css 
         },
         messages :{    //!5 or    show nothing after input wenn i didnt select
             noResults:'',
