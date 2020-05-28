@@ -21,7 +21,7 @@ $(document).ready(function () {
             check = false   //!4
         }
 
-//--------------
+//------or1--------
 
 
 //if both are true
@@ -50,8 +50,8 @@ if (check) {    //!5
 }
 
 
-//--------------
-//========or =====
+//---------1-----
+//========or 2=====
 /*
         resultCheck().then(theResult => {
             if (theResult == false) {
@@ -69,7 +69,7 @@ if (check) {    //!5
     });
 
 });
-//=========or======
+//=========or2======
 /*
 function resultCheck() {
     return new Promise((resolve, reject) => {
