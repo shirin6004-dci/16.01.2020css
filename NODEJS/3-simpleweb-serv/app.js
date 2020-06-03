@@ -1,9 +1,12 @@
 const http = require('http');  
 const fs   = require('fs');
 const url = require('url'); // get data (FORM) whith help url
+const nodemailer = require('nodemailer');  //import nodemailer
+const saver = require('./modules/saver')//import our module
 
-//import our module
-const saver = require('./modules/saver')
+const pass = require('./modules/pass')
+
+
 
 http.createServer((req , res)=>{
     let q = url.parse(req.url , true)
@@ -20,7 +23,29 @@ http.createServer((req , res)=>{
           if (q.query.fname) {
                 console.log(q.query);                
                 let name = q.query.fname + '\n' +q.query.lname + '\n' + q.query.msg               
-              saver.saveContent( name , "content.txt")             
+              saver.saveContent( name , "content.txt")       
+              //! ------!send Email
+              const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                  user: 'shirinvalizadeh6004@gmail.com',
+                  pass: pass.getPass()
+                }
+              });  
+              
+                var mailOptions = {
+                from: 'shirinvalizadeh6004@gmail.com',
+                to: 'shirinvalizadeh6004@gmail.com',
+                subject: 'Sending Email using Node.js',
+                text: 'That was easy!'
+                };
+                transporter.sendMail(mailOptions, function(error, info){
+                    if (error) {
+                      console.log(error);
+                    } else {
+                      console.log('Email sent: ' + info.response);
+                    }
+                  });
           }           
             let sharedtext = fs.readFileSync('views/contact.html') //? READFILE
            res.writeHead(200,{'content-Type' : 'text/html'})      //?TYPE OF CONTENT
