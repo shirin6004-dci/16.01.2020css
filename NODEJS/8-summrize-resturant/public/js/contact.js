@@ -58,8 +58,9 @@ $(document).ready(function(){
                 $(form).ajaxSubmit({
                     type:"POST",
                     data: $(form).serialize(),
-                    url:"contact_process.php",
+                    url:"/contact",
                     success: function() {
+                        $('#contactForm :input').val('');
                         $('#contactForm :input').attr('disabled', 'disabled');
                         $('#contactForm').fadeTo( "slow", 1, function() {
                             $(this).find(':input').attr('disabled', 'disabled');
