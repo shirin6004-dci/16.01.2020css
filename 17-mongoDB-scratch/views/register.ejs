@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="email"  id="usernameinput" placeholder="username">
+    <br>
+    <input type="password"  id="password">
+    <button id="register" > register</button>
+</body>
+<script>
+    document.querySelector('#register').addEventListener('click', e => {
+        e.preventDefault();
+        //get input value
+        const email = document.querySelector('#usernameinput').value.trim()
+        const password = document.querySelector('#password').value.trim()
+
+       
+    
+            //creat obj to be send
+            const data = {
+                email,
+                password,
+            }
+      
+        postData('/register' , data).then(data =>{
+            console.log(data);
+        }).catch()
+    })
+
+
+
+    async function postData(url = "", data = {}) {
+        const response = await fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+
+            },
+            body: JSON.stringify(data)
+        })
+        return response.json()
+    }
+</script>
+
+</html>
