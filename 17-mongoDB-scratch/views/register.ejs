@@ -8,44 +8,109 @@
 </head>
 
 <body>
-    <input type="email"  id="usernameinput" placeholder="username">
+    <input type="email" id="usernameinput" placeholder="username">
     <br>
-    <input type="password"  id="password">
-    <button id="register" > register</button>
+    <input type="password" id="password">
+    <button id="register"> register</button>
 </body>
 <script>
     document.querySelector('#register').addEventListener('click', e => {
         e.preventDefault();
         //get input value
-        const email = document.querySelector('#usernameinput').value.trim()
-        const password = document.querySelector('#password').value.trim()
+        const email = document.querySelector('#usernameinput')
+        const password = document.querySelector('#password')
 
-       
-    
+
+        if (email && password) {
             //creat obj to be send
             const data = {
-                email,
-                password,
+                email: email.value,
+                password: password.value,
             }
-      
-        postData('/register' , data).then(data =>{
-            console.log(data);
-        }).catch()
+            postData('/register', data)
+
+        } else {
+            alert(' fill input pls')
+        }
+
+
+
     })
 
 
-
-    async function postData(url = "", data = {}) {
-        const response = await fetch(url, {
+    //send data to server
+    function postData(url = "", data = {}) {
+        fetch(url, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
 
             },
             body: JSON.stringify(data)
+        }).then(response => {
+            if (response.status === 200) {
+                response.json().then(data => {
+                    if (data === 1) {
+                        alert('you are registered success')
+                        document.querySelector('#usernameinput').value = ''
+                        document.querySelector('#password').value= ''
+                    } else {
+                        if (data ===3) {
+                            
+                            alert('user is exist')
+                        }else{
+                             alert('pls tyr again')
+                        }
+                       
+                    }
+                }).catch(error => {
+                    alert('unknow response from the server')
+                })
+            } else {
+                alert('can not send ')
+            }
+        }).catch(error => {
+            alert('con not send data')
         })
-        return response.json()
+
     }
+
+
+
+    //or   async function 
+    /*
+    //FETCH
+    async function postData(url = “”, data = {}) {
+      const response = await fetch(url, {
+        method: “POST”,
+        headers: {
+          “Content-Type”: “application/json”,
+
+        },
+        body: JSON.stringify(data),
+      });
+      return response.json();
+    }
+
+AND HERE THE CALL
+
+postData(“/register”, data).then((data) => {
+          console.log(data);
+          if (data === 1) {
+            document.querySelector(“#username”).value = “”;
+            document.querySelector(“#password”).value = “”;
+          }
+          if (data === 3) {
+            alert(“Fields are not correct”);
+          }
+          if (data === 2) {
+            alert(“Server Error”);
+          }
+          if (data === 4) {
+            alert(“Username exist”);
+          }
+        }); 
+     */
 </script>
 
 </html>

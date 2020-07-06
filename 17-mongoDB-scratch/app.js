@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 // or const MongoClient = require('mongodb').MongoClient     
-const { MongoClient , ObjectID} = require('mongodb')    //or
+const { MongoClient, ObjectID } = require('mongodb')    //or
 const connectionString = 'mongodb+srv://fbw5:123456abc@cluster0.hjd09.mongodb.net/test1?retryWrites=true&w=majority'
 const passwordHash = require('password-hash')
 
@@ -12,9 +12,9 @@ app.set('view engine', 'ejs');
 app.set('views', __dirname + '/views');
 
 app.use(express.urlencoded({
-extended: false
+    extended: false
 })); //we dont need to get the data fron the url(we need to post data and file with post)
-app.use(express.json()) 
+app.use(express.json())
 
 
 
@@ -105,18 +105,18 @@ app.get('/insertmany', (req, res) => {
             const db = client.db('test1')
             const response = await db.collection('users').insertMany([
                 {
-                email: 'blabla1@hg',
-                password: '12345'
-            },
-            {
-                email: 'blabla2@hg',
-                password: '12395'
-            },
-            {
-                email: 'blabla3@hg',
-                password: '123'
-            },
-            
+                    email: 'blabla1@hg',
+                    password: '12345'
+                },
+                {
+                    email: 'blabla2@hg',
+                    password: '12395'
+                },
+                {
+                    email: 'blabla3@hg',
+                    password: '123'
+                },
+
             ])
             client.close()
             res.send(response);
@@ -131,7 +131,7 @@ app.get('/getUsers', (req, res) => {
     (async () => {
         try {
             let client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
-            const db = client.db('test1')                                    
+            const db = client.db('test1')
             const response = await db.collection('users').find({}).toArray()   // to get all  data as a Arry
             client.close()
             res.send(response);
@@ -143,14 +143,14 @@ app.get('/getUsers', (req, res) => {
 });
 
 app.get('/findone', (req, res) => {
-    (async()=>{
+    (async () => {
         try {
-           const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').findOne({_id: new ObjectID('5efc4e9961c2d9250154995b')})
-        client.close()
-        res.send(response);
+            const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+            const db = client.db('test1')
+            // const response = await db.collection('users').findOne({email:"blabla@hg"})
+            const response = await db.collection('users').findOne({ _id: new ObjectID('5efc4e9961c2d9250154995b') })
+            client.close()
+            res.send(response);
         } catch (error) {
             res.send(error);
         }
@@ -160,14 +160,14 @@ app.get('/findone', (req, res) => {
 
 
 app.get('/updatemany', (req, res) => {
-    (async()=>{
+    (async () => {
         try {
-           const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').updateMany({password:'12345'},{$set:{email:'asd@asd.asd'}})
-        client.close()
-        res.send(response);
+            const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+            const db = client.db('test1')
+            // const response = await db.collection('users').findOne({email:"blabla@hg"})
+            const response = await db.collection('users').updateMany({ password: '12345' }, { $set: { email: 'asd@asd.asd' } })
+            client.close()
+            res.send(response);
         } catch (error) {
             res.send(error);
         }
@@ -178,14 +178,14 @@ app.get('/updatemany', (req, res) => {
 
 
 app.get('/updateone', (req, res) => {
-    (async()=>{
+    (async () => {
         try {
-           const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').updateOne({_id: new ObjectID('5efc4e9961c2d9250154995b')},{$set:{email:'new@.asd'}})
-        client.close()
-        res.send(response);
+            const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+            const db = client.db('test1')
+            // const response = await db.collection('users').findOne({email:"blabla@hg"})
+            const response = await db.collection('users').updateOne({ _id: new ObjectID('5efc4e9961c2d9250154995b') }, { $set: { email: 'new@.asd' } })
+            client.close()
+            res.send(response);
         } catch (error) {
             res.send(error);
         }
@@ -196,14 +196,14 @@ app.get('/updateone', (req, res) => {
 
 
 app.get('/deletmany', (req, res) => {
-    (async()=>{
+    (async () => {
         try {
-           const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').deleteMany({password:'12345'})
-        client.close()
-        res.send(response);
+            const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+            const db = client.db('test1')
+            // const response = await db.collection('users').findOne({email:"blabla@hg"})
+            const response = await db.collection('users').deleteMany({ password: '12345' })
+            client.close()
+            res.send(response);
         } catch (error) {
             res.send(error);
         }
@@ -214,14 +214,14 @@ app.get('/deletmany', (req, res) => {
 
 
 app.get('/deletone', (req, res) => {
-    (async()=>{
+    (async () => {
         try {
-           const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').deleteOne({password:'12395'})
-        client.close()
-        res.send(response);
+            const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+            const db = client.db('test1')
+            // const response = await db.collection('users').findOne({email:"blabla@hg"})
+            const response = await db.collection('users').deleteOne({ password: '12395' })
+            client.close()
+            res.send(response);
         } catch (error) {
             res.send(error);
         }
@@ -230,32 +230,54 @@ app.get('/deletone', (req, res) => {
 });
 
 app.get('/register', (req, res) => {
-   res.render('register') 
+    res.render('register')
 });
 
 
 //collection.save({_id:"abc", user:"David"},{w:1}, callback)
-
+//1 success
+//2server error
+//3 user ist alredy exist
 app.post('/register', (req, res) => {
     console.log(req.body);
-     const email = req.body.email
-     const password = passwordHash.generate(req.body.password)
-    (async()=>{
-        try {
-        const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
-        const db = client.db('test1')
-       // const response = await db.collection('users').findOne({email:"blabla@hg"})
-       const response = await db.collection('users').insertOne({
-           email : email,
-           password: password
-       })
-        client.close()
-        res.send(response);
-        } catch (error) {
-            res.send(error);
-        }
+    const email = req.body.email
+    const password = passwordHash.generate(req.body.password)
+    if (email && password) {
+        (async () => {  //!------- iffi
+            try {
+                const client = await MongoClient.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true })
+                const db = client.db('test1')
+            
+                const response = await db.collection('users').findOne({email: email })        
+                
+              //  console.log(response);
+                if (response) {
+                    client.close()
+                    res.json(3)
+                }else{
+                    const insertResponse = await db.collection('users').insertOne({
+                        email,
+                        password
+                    })
+                     client.close()
+                     if (insertResponse.result.ok) {
+                          res.json(1)
+                     }else{
+                         res.json(2)
+                     }
+                    
+                }
+                
+               
+            } catch (error) {
+                res.json(2)
+            }
 
-    })()
+        })()
+    } else {
+        res.json(2)
+    }
+
 });
 
 
