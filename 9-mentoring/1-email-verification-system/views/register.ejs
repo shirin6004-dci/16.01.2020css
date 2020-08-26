@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>REGISTER FORM</h2>
+        <hr>
+        <div class="col-12-min mt-3">
+
+            <form>
+                <div class="row">
+                    <div class="col">
+                        <label for="fnameInp">first Name</label>
+                        <input type="text" class="form-control" id="fnameInp" placeholder="First name">
+                    </div>
+                    <div class="col">
+                        <label for="lnameInp">last Name</label>
+                        <input type="text" class="form-control" id="lnameInp" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="repassword">repeat Password</label>
+                    <input type="password" class="form-control" id="repassword" placeholder="repassword">
+                </div>
+                <!--    <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+                <button id="registerBtn" type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        document.querySelector('#registerBtn').addEventListener('click', e => {
+            e.preventDefault()
+            const fname = document.querySelector('#fnameInp')
+            const lname = document.querySelector('#lnameInp')
+            const email = document.querySelector('#email')
+            const password = document.querySelector('#Password')
+            const repassword = document.querySelector('#repassword')
+
+            if (fname.value.trim() && lname.value.trim() && email.value.trim() && password.value.trim() && password.value == repassword.value) {
+                const sentObj = {
+                    fname: fname.value,
+                    lname: lname.value,
+                    email: email.value,
+                    password: password.value,
+                }
+                // send data using fetch
+                fetch('/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(sentObj)
+                }).then(response => {
+                    if (response.status == 200) {
+                        response.json().then(data => {
+                            if (data === 1) {
+                                alert('to complete your registrition pls check your email to verify')
+                                    fname.value = ''
+                                    lname.value =''
+                                    email.value = ''
+                                    password.value = ''
+                                    repassword.value = ''
+                            } else {
+                                alert('somthing is wrong')
+                            }
+                        }).catch(err=>{
+                            alert('unknown response the server')
+                        })
+                    } 
+                }).catch(err => {
+                    alert('can not send data')
+                })
+            } else {
+                alert('err')
+            }
+
+        })
+    </script>
+
+
+
+
+</body>
+
+</html>
